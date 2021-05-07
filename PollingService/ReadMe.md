@@ -11,7 +11,7 @@ to the destination folder
 3) Number of files transferred parallelly can be configured
 4) Logging
 
-This project has been developed using **Microsoft .Net Core** technologies to make environment agnostic use and this has five different components/projects as described below:
+This project has been developed using **Microsoft .Net Core** and **C#** to make environment agnostic use and this has five different components/projects as described below:
 
 ### 1. PollingService.Common: 
 This project contains the common services, models, classes used by entire projects. i.e. It has model class, interfaces related to data and configuration provider related services which are resolved through Microsoft .net core dependency resolver with singleton pattern. We can extend the services here to create another implementation and then plug to resolver for further use.
