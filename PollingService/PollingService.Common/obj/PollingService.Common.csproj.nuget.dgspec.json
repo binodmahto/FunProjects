@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\P21\\Projects\\PollingService\\PollingService.Common\\PollingService.Common.csproj": {}
+  },
+  "projects": {
+    "C:\\P21\\Projects\\PollingService\\PollingService.Common\\PollingService.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\P21\\Projects\\PollingService\\PollingService.Common\\PollingService.Common.csproj",
+        "projectName": "PollingService.Common",
+        "projectPath": "C:\\P21\\Projects\\PollingService\\PollingService.Common\\PollingService.Common.csproj",
+        "packagesPath": "C:\\Users\\binod.mahto\\.nuget\\packages\\",
+        "outputPath": "C:\\P21\\Projects\\PollingService\\PollingService.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\binod.mahto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://epicor-corp.pkgs.visualstudio.com/_packaging/P21/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/epicor-corp/TPCx/_packaging/NextGenEdi/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

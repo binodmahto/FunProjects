@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>dotnet-PollingService.Worker-FED05EEE-7FAA-497B-B32E-9108A99BC265</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PollingService.Common\PollingService.Common.csproj" />
+    <ProjectReference Include="..\PollingService.Puller\PollingService.Puller.csproj" />
+    <ProjectReference Include="..\PollingService.Queue\PollingService.Queue.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
