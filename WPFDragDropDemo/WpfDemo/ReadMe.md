@@ -15,5 +15,5 @@ drop location is indicated with a blue highligted line which tells where exactly
  iii. Based on the datagrid's data collection change(i.e remove item and then add the dragged back at respective index), setting the value of RowEffect for Person model On Row_DragOver event.
  iv. Finally Overridding the DataGrid.RowStyle and change the style of the target row's border based on your Person.RowEffect value.
 
-**Note:** This is a prototype to help you on how to achieve the effect so you have to do your own customization or work to achieve what you need, if you need to.
+**Note:** This is a prototype to help you on how to achieve the effect so you have to do your own customization or work to achieve what you need, if you need to. Also the cursor is missing in result image as I missed while taking the snapshot but it is there. :) 
 
