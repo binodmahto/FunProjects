@@ -29,4 +29,11 @@ namespace WpfDemo
             set => SetProperty(ref rowEffect, value);
         }
     }
+    
+    public enum DragRowEffect
+    {
+        None,
+        Before,
+        After
+    }
 }
