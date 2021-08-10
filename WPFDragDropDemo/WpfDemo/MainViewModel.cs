@@ -38,11 +38,4 @@ namespace WpfDemo
         }
 
     }
-
-    public enum DragRowEffect
-    {
-        None,
-        Before,
-        After
-    }
 }
