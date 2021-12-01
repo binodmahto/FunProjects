@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "GrpcServiceDemo";
+
+package weatherForcast;
+
+// The weather forecast service definition.
+service WeatherForcast {
+  // Get weather forecast: Unary RPCs
+  rpc GetWeatherForecast (google.protobuf.Empty) returns (WeatherForecastReply);
+
+  // Get weather forecast: Unary RPCs
+  rpc GetWeatherForecastForDate (google.protobuf.Timestamp) returns (WeatherForecastReply);
+
+  // Get weather forecast: Server Streaming RPCs
+  rpc GetWeatherForecastStream (google.protobuf.Empty) returns (stream WeatherForecast);
+
+  // Get weather forecast: Client Streaming RPCs
+  rpc GetWeatherForecastClientStream (stream StreamMessage) returns (WeatherForecastReply);
+
+  // Get weather forecast: Bidirectional streaming RPCs
+  rpc GetWeatherForecastDuplexStream (stream StreamMessage) returns (stream WeatherForecast);
+}
+
+// The response message containing the weather information.
+message WeatherForecastReply {
+	repeated  WeatherForecast Result = 1;
+}
+
+message WeatherForecast {
+	google.protobuf.Timestamp Date = 1;
+	
+	int32 TemperatureC = 2;
+	
+	int32 TemperatureF = 3;
+	
+	string Summary = 4;
+}
+
+message StreamMessage{
+	int32 index = 1;
+}
